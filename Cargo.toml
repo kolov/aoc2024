@@ -1,0 +1,23 @@
+[package]
+name = "aoc2025"
+version = "0.0.1"
+edition = "2021"
+
+[[bin]]
+name = "aoc2025"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.92"
+base64 = "0.22.1"
+clap = { version = "4.5.20", features = ["derive"] }
+derive_more = { version = "1.0.0", features = ["display", "from", "into", "constructor"] }
+futures = { version = "0.3.31" }
+itertools = "0.13.0"
+num = "0.4"
+serde = "1.0.214"
+serde_json = { version = "1.0.132", features = ["raw_value"] }
+sqlx = { version = "0.8.2", features = ["runtime-tokio-native-tls", "postgres", "json", "uuid", "time"] }
+tokio = { version = "1.41.0", features = ["full"] }
+uuid = { version = "1.11.0" }
+reqwest = "0.12.9"
